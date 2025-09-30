@@ -3,7 +3,7 @@
 import { Motorista } from "./motorista";
 import { Veiculo } from "./veiculo";
 
-export class GerenciadorFrota {
+class GerenciadorFrota {
   // Para proteger o acesso direto.
   private veiculos: Veiculo[] = [];
   private motoristas: Motorista[] = [];
@@ -26,7 +26,7 @@ export class GerenciadorFrota {
       console.log("A frota está vazia.");
     } else {
       this.veiculos.forEach((veiculo) => {
-        veiculo.descrever(); // Chamada polimórfica!
+        veiculo.obterDescricao(); // Chamada polimórfica!
       });
     }
   }
