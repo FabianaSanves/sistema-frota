@@ -37,7 +37,7 @@ abstract class Veiculo {
 
     public acelerar(): void {
         if (this.estaLigado) { 
-            console.log(`O ${this.modelo} está acelerando de forma genérica.`);
+            console.log(`O ${this.modelo} está acelerando...`);
         } else {
             console.log(`O ${this.modelo} precisa estar ligado para acelerar!`);
         }
