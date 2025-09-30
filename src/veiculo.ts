@@ -1,4 +1,4 @@
-// A classe base 'veiculo' representa o que todos os itens têm em comum.
+// A classe 'veiculo' representa o que todos os itens têm em comum.
 abstract class Veiculo {
     // ATRIBUTOS comuns a todos os itens
     private modelo: string;
@@ -8,14 +8,14 @@ abstract class Veiculo {
     private estaLigado: boolean = false;
     
      constructor(modelo: string, marca: string, cor: string, ano: number) {
-        this.modelo = modelo; // Define o atributo modelo
-        this.marca = marca;   // Define o atributo marca
-        this.cor = cor;       // Define o atributo cor
-        this.ano = ano;       // Define o atributo ano
+        this.modelo = modelo;
+        this.marca = marca;   
+        this.cor = cor;       
+        this.ano = ano;       
         this.estaLigado = false; 
 }
 
-   // Aplica Encapsulamento: é o único caminho para mudar o status para 'ligado'.
+   // Aplica Encapsulamento
     
     public ligar(): void {
         if (!this.estaLigado) { 
