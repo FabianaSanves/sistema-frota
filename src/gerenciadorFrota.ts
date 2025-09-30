@@ -10,12 +10,12 @@ export class GerenciadorFrota {
 
   //Implementação dos métodos públicos
 
-  public adicionarVeiculo(veiculo): void {
+  public adicionarVeiculo(veiculo: Veiculo): void {
     this.veiculos.push(veiculo);
     console.log(`Veículo de placa ${veiculo.placa} foi adicionado à frota.`);
   }
 
-  public adicionarMotorista(motorista): void {
+  public adicionarMotorista(motorista: Motorista): void {
     this.motoristas.push(motorista);
     console.log(`Motorista ${motorista.nome} foi adicionado.`);
   }
@@ -34,7 +34,7 @@ export class GerenciadorFrota {
   public atribuirMotorista(placaVeiculo: string, cpfMotorista: string): void {
     //Encontrando o veículo na lista pela placa.
     const veiculo = this.veiculos.find(
-      (vehicle) => vehicle.placa === placaVeiculo
+      (veiculo) => veiculo.placa === placaVeiculo
     );
     if (!veiculo) {
       console.error(
@@ -42,10 +42,9 @@ export class GerenciadorFrota {
       );
       return;
     }
-
     //Encontrando o motorista na lista pelo CPF.
     const motorista = this.motoristas.find(
-      (driver) => driver.cpf === cpfMotorista
+      (motorista) => motorista.cpf === cpfMotorista
     );
     if (!motorista) {
       console.error(
