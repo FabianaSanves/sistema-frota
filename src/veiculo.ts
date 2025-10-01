@@ -29,6 +29,12 @@ export abstract class Veiculo {
     this.estaLigado = false;
   }
 
+  public atribuirMotorista(motorista: Motorista): void {
+    this._motorista = motorista;
+    console.log(
+      `O motorista ${motorista.nome} está com o veículo ${this.marca} ${this.modelo} com a placa ${this.placa}.`
+    );
+  }
   // Aplica Encapsulamento
   public ligar(): void {
     if (!this.estaLigado) {
@@ -59,4 +65,3 @@ export abstract class Veiculo {
 
   public abstract obterDescricao(): string;
 }
-

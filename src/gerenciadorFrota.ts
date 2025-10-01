@@ -3,7 +3,7 @@
 import { Motorista } from "./motorista";
 import { Veiculo } from "./veiculo";
 
-class GerenciadorFrota {
+export class GerenciadorFrota {
   // Para proteger o acesso direto.
   private veiculos: Veiculo[] = [];
   private motoristas: Motorista[] = [];
@@ -52,5 +52,6 @@ class GerenciadorFrota {
       );
       return;
     }
+    veiculo.atribuirMotorista(motorista);
   }
 }
