@@ -9,7 +9,7 @@ export abstract class Veiculo {
   // ATRIBUTOS comuns a todos os itens
   protected modelo: string;
   protected marca: string;
-  private cor: string;
+  protected cor: string;
   protected ano: number;
   private estaLigado: boolean = false;
 

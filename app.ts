@@ -12,8 +12,8 @@ console.log("\nCadastrando Motoristas e Veículos");
 const motoristaFabi = new Motorista("Fabiana Chaves", "897.654.121-11", "123456789");
 const motoristaIas = new Motorista("Iasmin Corregozinho", "487.912.252-22", "987654321");
 
-const fiatArgo = new Carro("ABC-1234", "Argo", "Fiat", "Branco", 2022, 2);
-const scaniaV8 = new Caminhao("DEF-5678", "R 540", "Scania", "Vermelho", 2022, 50000);
+const fiatArgo = new Carro("Argo", "Fiat", "Branco", 2022, 2,"ABC-1234");
+const scaniaV8 = new Caminhao("R 540", "Scania", "Vermelho", 2022, 50000, "DEF-5678");
 
 frota.adicionarMotorista(motoristaFabi);
 frota.adicionarMotorista(motoristaIas);
