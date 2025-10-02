@@ -1,8 +1,8 @@
 //Importando as classes criadas
-import { GerenciadorFrota } from "./src/gerenciadorFrota";
-import { Motorista } from "./src/motorista";
-import { Carro } from "./src/carro";
-import { Caminhao } from "./src/caminhao";
+import { GerenciadorFrota } from "./services/gerenciadorFrota";
+import { Motorista } from "./models/motorista";
+import { Carro } from "./models/carro";
+import { Caminhao } from "./models/caminhao";
 
 console.log("SISTEMA DE GERENCIAMENTO DE FROTA");
 
