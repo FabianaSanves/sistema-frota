@@ -1,7 +1,7 @@
 // Esta classe não representa um objeto físico, mas a lógica do sistema
 
-import { Motorista } from "./motorista";
-import { Veiculo } from "./veiculo";
+import { Motorista } from "../models/motorista";
+import { Veiculo } from '../models/veiculo';
 
 export class GerenciadorFrota {
   // Para proteger o acesso direto.
