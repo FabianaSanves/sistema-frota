@@ -54,15 +54,12 @@ Este projeto foi estruturado para praticar os 4 pilares da Programação Orienta
 
 ## **Arquivos:**
    
-  -  /sistema-frota
-  -  |-- /src
-  -  |   |-- caminhao.ts         # Classe filha de Veiculo (Herança)
-  -  |   |-- carro.ts            # Classe filha de Veiculo (Herança)
-  -  |   |-- gerenciadorFrota.ts   # Classe que orquestra a lógica do sistema
-  -  |   |-- motorista.ts        # Classe que representa o Motorista
-  -  |   |-- veiculo.ts          # Classe abstrata base (Abstração)
-  -  |
-  - |-- app.ts              # Arquivo principal que executa a simulação
+  -  caminhao.ts         # Classe filha de Veiculo (Herança)
+  -  carro.ts            # Classe filha de Veiculo (Herança)
+  -  gerenciadorFrota.ts   # Classe que orquestra a lógica do sistema
+  -  motorista.ts        # Classe que representa o Motorista
+  -  veiculo.ts          # Classe abstrata base (Abstração)
+  -  app.ts              # Arquivo principal que executa a simulação
 
 
 Feito com ❤️ por **Fabiana Sanves e Iasmin Corregozinho**.
