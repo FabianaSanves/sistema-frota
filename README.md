@@ -50,3 +50,22 @@ Este projeto foi estruturado para praticar os 4 pilares da Programação Orienta
 
 4.  **Polimorfismo:**
     -   O método `obterDescricao()` é sobrescrito nas classes `Carro
+---
+
+## **Arquivos:**
+   
+  -  /sistema-frota
+  -  |-- /src
+  -  |   |-- caminhao.ts         # Classe filha de Veiculo (Herança)
+  -  |   |-- carro.ts            # Classe filha de Veiculo (Herança)
+  -  |   |-- gerenciadorFrota.ts   # Classe que orquestra a lógica do sistema
+  -  |   |-- motorista.ts        # Classe que representa o Motorista
+  -  |   |-- veiculo.ts          # Classe abstrata base (Abstração)
+  -  |
+  - |-- app.ts              # Arquivo principal que executa a simulação
+
+
+Feito com ❤️ por **Fabiana Sanves e Iasmin Corregozinho**.
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Fabiana%20Sanves-0A66C2?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/fabisanves/)
+[![GitHub](https://img.shields.io/badge/GitHub-FabianaSanves-181717?style=flat-square&logo=github)](https://github.com/FabianaSanves)
