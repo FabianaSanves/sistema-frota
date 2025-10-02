@@ -26,7 +26,7 @@ export class GerenciadorFrota {
       console.log("A frota está vazia.");
     } else {
       this.veiculos.forEach((veiculo) => {
-        veiculo.descrever(); // Chamada polimórfica!
+        veiculo.obterDescricao(); // Chamada polimórfica!
       });
     }
   }
@@ -52,5 +52,6 @@ export class GerenciadorFrota {
       );
       return;
     }
+    veiculo.atribuirMotorista(motorista);
   }
 }

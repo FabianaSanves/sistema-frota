@@ -1,6 +1,6 @@
-import { veiculo } from './veiculo'; 
+import { Veiculo } from './veiculo'; 
 
-class Caminhao extends veiculo { 
+export class Caminhao extends Veiculo { 
 
     private capacidadeCarga: number;
     constructor(
@@ -8,9 +8,10 @@ class Caminhao extends veiculo {
         marca: string, 
         cor: string, 
         ano: number, 
-        capacidadeCarga: number 
+        capacidadeCarga: number,
+        placa: string
     ) {
-        super(modelo, marca, cor, ano); 
+        super(modelo, marca, cor, ano, placa); 
         this.capacidadeCarga = capacidadeCarga; 
     }
     public obterDescricao(): string {

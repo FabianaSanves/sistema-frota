@@ -1,5 +1,5 @@
 //Criação da Classe Motorista
-class Motorista {
+export class Motorista {
   //atributos privados para nome, cpf e cnh (encapsulamento)
   private _nome: string;
   private _cpf: string;
